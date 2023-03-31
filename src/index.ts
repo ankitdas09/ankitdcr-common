@@ -8,4 +8,7 @@ const color: Color = {
   blue: 10,
   green: 10,
 };
+
 console.log(color);
+
+export default color;
