@@ -3,7 +3,7 @@ import { DatabaseConnectionError } from "../errors/database-connection-error";
 import { RequestValidationError } from "../errors/request-validation-error";
 import { Request, Response, NextFunction } from "express";
 
-const errorHandler = (
+export const errorHandler = (
   err: Error,
   req: Request,
   res: Response,
@@ -17,5 +17,3 @@ const errorHandler = (
     errors: [{ message: "Something went wrong", field: "Server Error" }],
   });
 };
-
-export default errorHandler;
